@@ -1,11 +1,15 @@
-#include"main.h"
+#include "mainn.h"
 /**
-*main - Prints "_putchar" followed by a new line.
-*Return: Always 0.
+*print_alphabet - Print alphabet in lowercase using only `_putchar`
+*Return: 0
 */
-int main(void)
-{	_putchar("_putchar");
+void print_alphabet(void)
+{
+	char c = 'a';
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
 	_putchar('\n');
-
-	return (0);
 }
